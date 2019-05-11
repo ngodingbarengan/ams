@@ -1,0 +1,48 @@
+/**
+ * adding transparency to unclicked controls / opacity to active thumbs
+ */
+
+#my_thumb_slider .control {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+#my_thumb_slider .control.active {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+#my_thumb_slider .slides {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+#my_thumb_slider .slide img {
+	margin:auto;
+	display:block;
+	width:auto;
+	height:auto;
+	max-width:700px;
+	max-height:500px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#my_thumb_slider .control img {
+	width:auto;
+	height:auto;
+	max-width:102px;
+	max-height:80px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
