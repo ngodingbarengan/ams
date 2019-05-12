@@ -480,7 +480,7 @@ class Tes extends CI_Controller {
 	
 	public function shopping_cart()
 	{
-		$this->load->view('shopping_cart');
+		$this->load->view('cart');
 	}
 	
 	public function select_kategori()
